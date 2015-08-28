@@ -1,1 +1,9 @@
-<h1>EFF THIS</h1>
+<div ng-repeat='post in posts'>
+  <div>
+    <p>Title: {{post.title}} </p>
+    <p>Author: {{post.author}} </p>
+    <img src={{post.image}} alt='img' width="500">
+    <p>Description: {{post.description}} </p>
+    <p>Created: {{post.create_at | date: format: 'fullDate'}} </p>
+  </div>
+</div>
